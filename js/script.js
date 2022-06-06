@@ -17,12 +17,18 @@ generateBtn.addEventListener('click',
         const finalPrice = price - discount;
 
         document.getElementById('ticket-owner').innerHTML = userName;
-        document.getElementById('ticket-promo').innerHTML = userAge;
         document.getElementById('ticket-coach').innerHTML = Math.floor(Math.random() * 10) + 1;
         document.getElementById('ticket-cpcode').innerHTML = Math.floor(Math.random() * 9999) + 1;
         document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2);
 
-        
+        let promo = document.getElementById('ticket-promo');
+        promo = document.getElementById('ticket-promo').innerHTML = 'Standard';
+
+        if (userAge === 'minorenne') {
+            promo = document.getElementById('ticket-promo').innerHTML = 'Offerta 20'; 
+        } else if ( userAge === 'over') {
+            promo = document.getElementById('ticket-promo').innerHTML = 'Offerta 40';
+        };
     }
 );
 
