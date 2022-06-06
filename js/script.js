@@ -29,6 +29,8 @@ generateBtn.addEventListener('click',
         } else if ( userAge === 'over') {
             promo = document.getElementById('ticket-promo').innerHTML = 'Offerta 40';
         };
+
+        document.getElementById('ticket').classList.add('active');
     }
 );
 

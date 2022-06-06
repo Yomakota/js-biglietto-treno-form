@@ -1,0 +1,13 @@
+* {
+    margin = 0;
+    padding = 0;
+    box-sizing: border-box;
+}
+
+.boarding-pass {
+    display: none;
+}
+
+.boarding-pass.active {
+    display: block;
+}
