@@ -18,6 +18,16 @@ generateBtn.addEventListener('click',
 
         document.getElementById('ticket-owner').innerHTML = userName;
         document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2);
+    }
+);
 
+const cancelBtn = document.getElementById('cancel-ticket');
+cancelBtn.addEventListener('click',
+    function () {
+        document.getElementById('user-name').value = '';
+        document.getElementById('user-km').value = '';
+        document.getElementById('user-age').value = '';
+        document.getElementById('ticket-owner').innerHTML = '';
+        document.getElementById('ticket-price').innerHTML = '';
     }
 );
