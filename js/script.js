@@ -17,7 +17,12 @@ generateBtn.addEventListener('click',
         const finalPrice = price - discount;
 
         document.getElementById('ticket-owner').innerHTML = userName;
+        document.getElementById('ticket-promo').innerHTML = userAge;
+        document.getElementById('ticket-coach').innerHTML = Math.floor(Math.random() * 10) + 1;
+        document.getElementById('ticket-cpcode').innerHTML = Math.floor(Math.random() * 9999) + 1;
         document.getElementById('ticket-price').innerHTML = finalPrice.toFixed(2);
+
+        
     }
 );
 
@@ -28,6 +33,9 @@ cancelBtn.addEventListener('click',
         document.getElementById('user-km').value = '';
         document.getElementById('user-age').value = '';
         document.getElementById('ticket-owner').innerHTML = '';
+        document.getElementById('ticket-promo').innerHTML = '';
         document.getElementById('ticket-price').innerHTML = '';
+        document.getElementById('ticket-coach').innerHTML = '';
+        document.getElementById('ticket-cpcode').innerHTML = '';
     }
 );
