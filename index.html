@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="user-form">
         <div class="form-item">
@@ -30,18 +32,24 @@
         </div>
 
         <div class="form-item">
-            <button id="generate">
+            <button id="generate-ticket">
                 Genera
             </button>
         </div>
-        
+
         <div class="form-item">
-            <button id="cancel">
+            <button id="cancel-ticket">
                 Annulla
             </button>
         </div>
     </div>
 
-    <script type="text/javascript" src="js/script.js" ></script>
+    <div class="ticket">
+        <div>Passegero : <span id="ticket-owner"></span></div>
+        <div>Prezzo : <span id="ticket-price"></span></div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
