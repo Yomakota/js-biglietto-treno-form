@@ -31,7 +31,7 @@ generateBtn.addEventListener('click',
         };
 
 
-        if (userName !== '' && userKm !== '') {
+        if (userName !== '' && userKm) {
             document.getElementById('ticket').classList.add('active')
         };
     }
