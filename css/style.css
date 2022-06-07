@@ -2,12 +2,125 @@
     margin : 0;
     padding : 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .boarding-pass {
     display: none;
 }
 
+.boarding-pass-details {
+    background-color: white;
+}
+
 .boarding-pass.active {
+    display: flex;
+    flex-flow: column;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 14, 88);
+    height: 90vh;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.user-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.input {
+    display: flex;
+}
+
+.input input {
+    text-align: center;
+}
+
+.form-item {
+    padding: 20px;
+}
+
+.form-item label {
     display: block;
+    margin-bottom: 10px;
+    color: rgb(235, 14, 88);
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    padding: 2px 10px;
+    color: rgb(235, 14, 88);
+    font-weight: bold;
+}
+
+.boarding-pass {
+    flex-flow: column;
+    width: 70%;
+    margin: auto;
+}
+
+.boarding-pass span {
+    display: flex;
+    font-weight: 100;
+}
+.title-ticket-details {
+    text-transform: uppercase;
+    text-align: initial;
+    width: 70%;
+}
+
+.traveler {
+    background-color: lightgrey;
+    text-align: center;
+    text-transform: uppercase;
+    width:22%;
+    height: 100px;
+}
+
+.boarding-pass-bottom {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+.ticket-details {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-weight: bold;
+    border-right: none;
+    border-left: none;
+}
+
+.ticket-details span {
+    margin-top: 40px;
+}
+
+#ticket-owner {
+    justify-content: center;
+    text-transform: none;
+    font-weight: bold;
 }

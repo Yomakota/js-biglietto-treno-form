@@ -6,52 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="user-form">
-        <div class="form-item">
-            <label for="user-name">Nome Cognome</label>
-            <input type="text" id="user-name">
-        </div>
+    <div class="container">
+        <section>
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+            <div class="user-form">
+            
+                <div class="input">
+                    <div class="form-item">
+                        <label for="user-name">Nome Cognome</label>
+                        <input type="text" id="user-name">
+                    </div>
+            
+                    <div class="form-item">
+                        <label for="user-km">Km da percorrere</label>
+                        <input type="text" id="user-km">
+                    </div>
+            
+                    <div class="form-item">
+                        <label for="user-age">Fascia d'età</label>
+                        <select name="" id="user-age">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="buttons">
+                    <div class="form-item">
+                        <button id="generate-ticket">
+                            Genera
+                        </button>
+                    </div>
+            
+                    <div class="form-item">
+                        <button id="cancel-ticket">
+                            Annulla
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+        <section>
+            
+            <div id="ticket" class="boarding-pass">
+                <h1>il tuo biglietto</h1>
 
-        <div class="form-item">
-            <label for="user-km">Km</label>
-            <input type="text" id="user-km">
-        </div>
+                <div class="boarding-pass-details">
+                    <div class="boarding-pass-top">
+                        <h3 class="title-ticket-details">dettaglio passeggeri</h3>
+                    </div>
+                    
+                    <div class="boarding-pass-bottom">
+                        <div class="traveler">nome passegero:<span id="ticket-owner"></span></div>
+                    
+                        <div class="ticket-details">
+                            <div>Offerta<span id="ticket-promo"></span></div>
+                            <div>Carrozza<span id="ticket-coach"></span></div>
+                            <div>Codice Cp<span id="ticket-cpcode"></span></div>
+                            <div>Prezzo<span id="ticket-price"></span></div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="form-item">
-            <label for="user-age">Età</label>
-            <select name="" id="user-age">
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="minorenne">Minorenne</option>
-                <option value="over">Over 65</option>
-            </select>
-        </div>
-
-        <div class="form-item">
-            <button id="generate-ticket">
-                Genera
-            </button>
-        </div>
-
-        <div class="form-item">
-            <button id="cancel-ticket">
-                Annulla
-            </button>
-        </div>
+                
+            </div>
+        </section>
     </div>
-
-    <div id="ticket" class="boarding-pass">
-        <div>Passegero: <span id="ticket-owner"></span></div>
-        <div>Offerta: <span id="ticket-promo"></span></div>
-        <div>Carrozza: <span id="ticket-coach"></span></div>
-        <div>Codice Cp: <span id="ticket-cpcode"></span></div>
-        <div>Prezzo: <span id="ticket-price"></span></div>
-    </div>
-
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

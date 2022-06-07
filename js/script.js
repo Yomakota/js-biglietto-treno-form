@@ -30,7 +30,10 @@ generateBtn.addEventListener('click',
             promo = document.getElementById('ticket-promo').innerHTML = 'Offerta 40';
         };
 
-        document.getElementById('ticket').classList.add('active');
+
+        if (userName !== '' && userKm !== '') {
+            document.getElementById('ticket').classList.add('active')
+        };
     }
 );
 
@@ -45,5 +48,6 @@ cancelBtn.addEventListener('click',
         document.getElementById('ticket-price').innerHTML = '';
         document.getElementById('ticket-coach').innerHTML = '';
         document.getElementById('ticket-cpcode').innerHTML = '';
+        document.getElementById('ticket').classList.remove('active');
     }
 );
